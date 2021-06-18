@@ -21,6 +21,8 @@ const useStyles = makeStyles((theme) => ({
       marginLeft: theme.spacing(1),
       width: "40%",
     },
+    height: "30%",
+    marginTop: 8,
   },
   searchIcon: {
     padding: theme.spacing(0, 2),

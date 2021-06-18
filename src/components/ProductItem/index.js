@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useContext } from "react";
 import { makeStyles } from "@material-ui/core/styles";
 import Card from "@material-ui/core/Card";
 import CardActionArea from "@material-ui/core/CardActionArea";
@@ -9,12 +9,16 @@ import Button from "@material-ui/core/Button";
 import Typography from "@material-ui/core/Typography";
 import SaveAltIcon from "@material-ui/icons/SaveAlt";
 import FavoriteBorderIcon from "@material-ui/icons/FavoriteBorder";
+import FavoriteIcon from "@material-ui/icons/Favorite";
 import classes from "./productItem.module.css";
 import { useHistory } from "react-router";
+import Truncate from "react-truncate";
+import { storeContext } from "../../Contexts/StoreContext";
 
 const useStyles = makeStyles({
   root: {
     width: "100%",
+    height: 512,
     textAlign: "center",
     "&:hover": {
       margin: "-10px",
@@ -31,18 +35,23 @@ export default function ProductItem({ data }) {
   const classes = useStyles();
   const history = useHistory();
 
-  const { title, images, price, memory, id } = data;
+  const { title, images, price, memory, like, id } = data;
+
+  const { addProductToCart, changeLikeStatus } = useContext(storeContext);
+
+  const handleLikeChange = () => {
+    changeLikeStatus(id, like);
+  };
 
   return (
-    <Card
-      className={classes.root}
-      onClick={() => history.push(`/products/${id}`)}
-    >
-      <CardActionArea>
+    <Card className={classes.root}>
+      <CardActionArea onClick={() => history.push(`/products/${id}`)}>
         <CardMedia className={classes.media} image={images[0]} title={title} />
         <CardContent>
           <Typography gutterBottom variant="h5" component="h2">
-            {title}
+            <Truncate lines={1} ellipsis={"..."}>
+              {title}
+            </Truncate>
           </Typography>
           <Typography variant="body2" color="textSecondary" component="p">
             {memory}
@@ -51,15 +60,25 @@ export default function ProductItem({ data }) {
             {price}
           </Typography>
         </CardContent>
-        <CardActions>
-          <Button size="small" color="primary">
-            <FavoriteBorderIcon style={{ color: "#e7315d" }} />
-          </Button>
-          <Button size="small" color="primary">
-            <SaveAltIcon style={{ color: "#e7315d" }} />
-          </Button>
-        </CardActions>
       </CardActionArea>
+      <CardActions>
+        {/* {like ? (
+          <Button onclick={handleLikeChange} size="small" color="primary">
+            <FavoriteIcon style={{ color: "#e7315d" }} />
+          </Button>
+        ) : ( */}
+        <Button onclick={handleLikeChange} size="small" color="primary">
+          <FavoriteBorderIcon style={{ color: "#e7315d" }} />
+        </Button>
+
+        <Button
+          onClick={() => addProductToCart(data)}
+          size="small"
+          color="primary"
+        >
+          <SaveAltIcon style={{ color: "#e7315d" }} />
+        </Button>
+      </CardActions>
     </Card>
   );
 }

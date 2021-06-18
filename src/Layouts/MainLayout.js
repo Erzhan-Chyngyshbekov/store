@@ -7,13 +7,15 @@ import CssBaseline from "@material-ui/core/CssBaseline";
 import useScrollTrigger from "@material-ui/core/useScrollTrigger";
 import Box from "@material-ui/core/Box";
 import Container from "@material-ui/core/Container";
+import Button from "@material-ui/core/Button";
 import Slide from "@material-ui/core/Slide";
 import MenuBar from "../components/MenuBar/MenuBar";
 import SearchBar from "../components/SearchBar/SearchBar";
-import { makeStyles, useTheme } from "@material-ui/core";
-import { NavLink, useHistory } from "react-router-dom";
+import { IconButton, makeStyles, useTheme } from "@material-ui/core";
+import { Link, NavLink, useHistory } from "react-router-dom";
 import AddIcon from "@material-ui/icons/Add";
 import { Fab } from "@material-ui/core";
+import ShoppingCartIcon from "@material-ui/icons/ShoppingCart";
 
 const useStyles = makeStyles((theme) => ({
   content: {
@@ -95,14 +97,30 @@ export default function MainLayout(props) {
           <Toolbar className={classes.toolbar}>
             <MenuBar />
             <div className={classes.navContent}>
-              <Typography className={classes.logo} variant="h6">
+              <Typography
+                style={{ marginTop: 10 }}
+                className={classes.logo}
+                variant="h5"
+              >
                 <NavLink
-                  style={{ textDecoration: "none", color: "#fff" }}
+                  style={{
+                    textDecoration: "none",
+                    color: "#fff",
+                  }}
                   to="/"
                 >
                   TechnoStore
                 </NavLink>
               </Typography>
+              <Link
+                to="/cart"
+                style={{ textDecoration: "none", color: "white" }}
+              >
+                <IconButton color="inherit">
+                  <ShoppingCartIcon />
+                  корзина
+                </IconButton>
+              </Link>
               <SearchBar />
             </div>
           </Toolbar>

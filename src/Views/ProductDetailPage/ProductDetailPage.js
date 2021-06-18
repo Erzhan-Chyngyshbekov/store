@@ -33,20 +33,20 @@ export default function ProductDetailPage() {
         <div className={classes.container}>
           <ProductSlider images={productDetail.images} />
 
-          <div>
+          <div className={classes.container__info}>
+            <Typography variant="h3">{productDetail.title}</Typography>
+            <Typography variant="h5">{productDetail.memory}</Typography>
+            <Typography variant="h3">{productDetail.price}</Typography>
+            <Typography variant="body1">{productDetail.description}</Typography>
+
             <IconButton onClick={handleProductDelete}>
-              <DeleteIcon />
+              <DeleteIcon fontSize="large" />
             </IconButton>
 
             <IconButton onClick={() => history.push(`/products/${id}/update`)}>
-              <EditIcon />
+              <EditIcon fontSize="large" />
             </IconButton>
           </div>
-
-          <Typography variant="h3">{productDetail.title}</Typography>
-          <Typography variant="h5">{productDetail.memory}</Typography>
-          <Typography variant="h3">{productDetail.price}</Typography>
-          <Typography variant="body1">{productDetail.description}</Typography>
         </div>
       ) : (
         ""

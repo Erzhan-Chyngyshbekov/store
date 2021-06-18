@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useContext } from "react";
 import clsx from "clsx";
 import { makeStyles } from "@material-ui/core/styles";
 import SwipeableDrawer from "@material-ui/core/SwipeableDrawer";
@@ -12,6 +12,8 @@ import InboxIcon from "@material-ui/icons/MoveToInbox";
 import MailIcon from "@material-ui/icons/Mail";
 import IconButton from "@material-ui/core/IconButton";
 import MenuIcon from "@material-ui/icons/Menu";
+import { storeContext } from "../../Contexts/StoreContext";
+import { Link } from "react-router-dom";
 
 const useStyles = makeStyles({
   list: {
@@ -20,6 +22,10 @@ const useStyles = makeStyles({
   fullList: {
     width: "auto",
   },
+  brandLogo: {
+    width: 120,
+    objectFit: "contain",
+  },
 });
 
 export default function MenuBar() {
@@ -27,6 +33,8 @@ export default function MenuBar() {
   const [state, setState] = React.useState({
     left: false,
   });
+
+  const { brands } = useContext(storeContext);
 
   const toggleDrawer = (anchor, open) => (event) => {
     if (
@@ -50,24 +58,20 @@ export default function MenuBar() {
       onKeyDown={toggleDrawer(anchor, false)}
     >
       <List>
-        {["Inbox", "Starred", "Send email", "Drafts"].map((text, index) => (
-          <ListItem button key={text}>
-            <ListItemIcon>
-              {index % 2 === 0 ? <InboxIcon /> : <MailIcon />}
-            </ListItemIcon>
-            <ListItemText primary={text} />
-          </ListItem>
-        ))}
-      </List>
-      <Divider />
-      <List>
-        {["All mail", "Trash", "Spam"].map((text, index) => (
-          <ListItem button key={text}>
-            <ListItemIcon>
-              {index % 2 === 0 ? <InboxIcon /> : <MailIcon />}
-            </ListItemIcon>
-            <ListItemText primary={text} />
-          </ListItem>
+        {brands.map((brand) => (
+          <Link to={`/brand/${brand.id}`}>
+            <ListItem button key={brand.id}>
+              <ListItemText primary={brand.title} />
+
+              <ListItemIcon>
+                <img
+                  className={classes.brandLogo}
+                  src={brand.logo}
+                  alt={`${brand.title} logo`}
+                />
+              </ListItemIcon>
+            </ListItem>
+          </Link>
         ))}
       </List>
     </div>

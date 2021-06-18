@@ -1,5 +1,5 @@
 {
-  "brands": [
+  "brand": [
     {
       "id": 1,
       "title": "Samsung",
@@ -34,107 +34,113 @@
   "products": [
     {
       "id": 1,
-      "brand": 1,
+      "brand": 3,
+      "like": false,
       "title": "Xiaomi Redmi Note 10S",
       "memory": "6+128Gb",
       "price": 21990,
       "description": "Открывайте новые грани возможного с Redmi Note 10S. Камера с максимальным разрешением 64 Mп позволяет запечатлеть все в малейших деталях. Яркий AMOLED экран диагональю 6,43 дюйма обеспечивает больше пространства для ваших развлечений, а емкая батарея с поддержкой быстрой зарядки 33 Вт позаботится о том, чтобы энергии хватило для всего.",
       "images": [
         "https://www.myphone.kg/files/media/12/12210.jpg",
-        "https://www.myphone.kg/cache/files/12211.jpg_w130_h130_resize.jpg?t=1623660436",
-        "https://www.myphone.kg/cache/files/12212.png_w130_h130_resize.png?t=1623660436"
+        "https://www.myphone.kg/files/media/12/12211.jpg",
+        "https://www.myphone.kg/files/media/12/12212.png",
+        "https://www.myphone.kg/files/media/12/12213.png"
       ]
     },
     {
       "id": 2,
       "brand": 1,
-      "title": "Xiaomi Redmi Note 10S",
-      "memory": "1288Gb",
+      "title": "Samsung Galaxy A32",
+      "memory": "128Gb",
       "price": 21590,
-      "description": "Открывайте новые грани возможного с Redmi Note 10S. Камера с максимальным разрешением 64 Mп позволяет запечатлеть все в малейших деталях. Яркий AMOLED экран диагональю 6,43 дюйма обеспечивает больше пространства для ваших развлечений, а емкая батарея с поддержкой быстрой зарядки 33 Вт позаботится о том, чтобы энергии хватило для всего.",
+      "description": "Насладитесь детальным изображением на Super AMOLED 6,4 дюйма Infinity-U экране с разрешением Full HD+ и яркостью до 800 нит, которое отлично видно даже при ярком дневном свете. Функция защиты глаз 'Eye Comfort Shield' снижает уровень синего свечения, а сверх плавная прокрутка обеспечивает комфортный просмотр во время игрового сеанса или скроллинга изображения на экране.",
       "images": [
-        "https://www.myphone.kg/files/media/12/12112.webp"
+        "https://www.myphone.kg/files/media/12/12112.webp",
+        "https://www.myphone.kg/files/media/12/12113.webp",
+        "https://www.myphone.kg/files/media/12/12113.webp",
+        "https://www.myphone.kg/files/media/12/12113.webp"
       ]
     },
     {
       "id": 3,
       "brand": 1,
-      "title": "Xiaomi Redmi Note 10S",
+      "title": "Samsung M12 ",
       "memory": "32Gb",
       "price": 13390,
-      "description": "Открывайте новые грани возможного с Redmi Note 10S. Камера с максимальным разрешением 64 Mп позволяет запечатлеть все в малейших деталях. Яркий AMOLED экран диагональю 6,43 дюйма обеспечивает больше пространства для ваших развлечений, а емкая батарея с поддержкой быстрой зарядки 33 Вт позаботится о том, чтобы энергии хватило для всего.",
+      "description": "Открой для себя мир контента и развлечений вместе с Galaxy M12. Благодаря яркому и большому 6,5-дюймовому экрану 90 Гц с V-образным вырезом с разрешением HD+ ты получишь невероятно яркое и четкое изображение. Стильный дизайн Galaxy M12 притягивает взгляд. Необычные металлические засечки на задней поверхности создают неповторимый современный дизайн, а плавные линии корпуса обеспечивают комфортную эргономику, благодаря чему смартфоном очень удобно пользоваться длительное время. Выбирай один из ярких оттенков Черного, Синего или Зеленого цвета.",
       "images": [
         "https://www.myphone.kg/files/media/12/12103.jpg",
-        "https://www.myphone.kg/cache/files/12103.jpg_w130_h130_resize.jpg?t=1622460245",
-        "https://www.myphone.kg/cache/files/12103.jpg_w130_h130_resize.jpg?t=1622460245",
-        "https://www.myphone.kg/cache/files/12101.jpg_w130_h130_resize.jpg?t=1622460245"
+        "https://www.myphone.kg/files/media/12/12100.jpg",
+        "https://www.myphone.kg/files/media/12/12102.jpg",
+        "https://www.myphone.kg/files/media/12/12101.jpg"
       ]
     },
     {
       "id": 4,
-      "brand": 1,
-      "title": "Xiaomi Redmi Note 10S",
-      "memory": "32Gb",
-      "price": 13390,
-      "description": "Открывайте новые грани возможного с Redmi Note 10S. Камера с максимальным разрешением 64 Mп позволяет запечатлеть все в малейших деталях. Яркий AMOLED экран диагональю 6,43 дюйма обеспечивает больше пространства для ваших развлечений, а емкая батарея с поддержкой быстрой зарядки 33 Вт позаботится о том, чтобы энергии хватило для всего.",
+      "brand": 3,
+      "title": "Xiaomi Poco X3 Pro",
+      "memory": "128Gb",
+      "price": 24790,
+      "description": "Материал корпуса стал более стойким к отпечаткам пальцев, благодаря чему смартфон всегда выглядит красиво. По центру задней панели с закругленными краями проложена отражающая полоса, а по бокам — металлическая окантовка. Дисплей защищает специальное стекло Corning Gorilla Glass 6. Отпечаток пальца можно идентифицировать сканером, расположенном на боковой грани. Смартфон рассчитан на 2 SIM-карты и карту памяти MicroSD.",
       "images": [
         "https://www.myphone.kg/files/media/11/11930.webp",
-        "https://www.myphone.kg/cache/files/11932.webp_w130_h130_resize.webp?t=1619457471",
-        "https://www.myphone.kg/cache/files/11932.webp_w130_h130_resize.webp?t=1619457471"
+        "https://www.myphone.kg/files/media/11/11932.webp",
+        "https://www.myphone.kg/files/media/11/11931.webp",
+        "https://www.myphone.kg/files/media/11/11929.webp"
       ]
     },
     {
       "id": 5,
-      "brand": 1,
-      "title": "Xiaomi Redmi Note 10S",
+      "brand": 4,
+      "title": "Realme X3",
       "memory": "6+128Gb",
-      "price": 21990,
-      "description": "Открывайте новые грани возможного с Redmi Note 10S. Камера с максимальным разрешением 64 Mп позволяет запечатлеть все в малейших деталях. Яркий AMOLED экран диагональю 6,43 дюйма обеспечивает больше пространства для ваших развлечений, а емкая батарея с поддержкой быстрой зарядки 33 Вт позаботится о том, чтобы энергии хватило для всего.",
+      "price": 32990,
+      "description": "Камера realme X3 SuperZoom оснащена передовым перископическим модулем, который способен делать снимки с 60-кратным увеличением. В сочетании с другими возможностями камеры это позволяет фотографировать практически на любом расстоянии от объекта: как вблизи, так и при сильном удалении. За производительность realme X3 SuperZoom отвечает Snapdragon 855 Plus, который легко справляется с многозадачностью и позволяет запускать требовательные игры и смотреть видео в высоком разрешении.",
       "images": [
-        "https://www.myphone.kg/files/media/12/12210.jpg",
-        "https://www.myphone.kg/cache/files/12211.jpg_w130_h130_resize.jpg?t=1623660436",
-        "https://www.myphone.kg/cache/files/12212.png_w130_h130_resize.png?t=1623660436"
+        "https://www.myphone.kg/files/media/10/10069.webp",
+        "https://www.myphone.kg/files/media/10/10070.webp",
+        "https://www.myphone.kg/files/media/10/10072.webp",
+        "https://www.myphone.kg/files/media/10/10071.webp"
       ]
     },
     {
       "id": 6,
-      "brand": 1,
-      "title": "Xiaomi Redmi Note 10S",
-      "memory": "128Gb",
-      "price": 21590,
-      "description": "Открывайте новые грани возможного с Redmi Note 10S. Камера с максимальным разрешением 64 Mп позволяет запечатлеть все в малейших деталях. Яркий AMOLED экран диагональю 6,43 дюйма обеспечивает больше пространства для ваших развлечений, а емкая батарея с поддержкой быстрой зарядки 33 Вт позаботится о том, чтобы энергии хватило для всего.",
+      "brand": 5,
+      "title": "Inoi 7i",
+      "memory": "8Gb",
+      "price": 5490,
+      "description": "Простая и понятная модель в черном пластиковом корпусе. Она оснащена всеми необходимыми каждому пользователю функциями и не усложнена излишествами. Обеспечивает устройству продолжительную работу даже при самых больших нагрузках. Изображение на 6.2-дюймовом IPS-экране сопровождается качественным цифровым звучанием благодаря системе Hi-Res Audio. Для хранения необходимых файлов и приложений в конфигурации предусмотрено 8 ГБ встроенной памяти.",
       "images": [
-        "https://www.myphone.kg/files/media/12/12112.webp",
-        "https://www.myphone.kg/cache/files/12113.webp_w130_h130_resize.webp?t=1622460181",
-        "https://www.myphone.kg/cache/files/12114.webp_w130_h130_resize.webp?t=1622460181",
-        "https://www.myphone.kg/cache/files/12115.webp_w130_h130_resize.webp?t=1622460181"
+        "https://www.myphone.kg/files/media/9/9358.webp",
+        "https://www.myphone.kg/files/media/9/9356.webp",
+        "https://www.myphone.kg/files/media/9/9357.webp"
       ]
     },
     {
       "id": 7,
-      "brand": 1,
-      "title": "Xiaomi Redmi Note 10S",
-      "memory": "32Gb",
-      "price": 13390,
-      "description": "Открывайте новые грани возможного с Redmi Note 10S. Камера с максимальным разрешением 64 Mп позволяет запечатлеть все в малейших деталях. Яркий AMOLED экран диагональю 6,43 дюйма обеспечивает больше пространства для ваших развлечений, а емкая батарея с поддержкой быстрой зарядки 33 Вт позаботится о том, чтобы энергии хватило для всего.",
+      "brand": 2,
+      "title": "Apple IPhone 12 Pro Max",
+      "memory": "512Gb",
+      "price": 125900,
+      "description": "Модели Pro Max также оснащены невероятно прочным Ceramic Shield, который обеспечивает лучшую в этом классе телефонов защиту от воды и пыли. Гаджет может находиться под водой на глубине шести метров полчаса. iPhone Pro 12 Max оснащен чипом A14 Bionic, которым называют одним из самых мощных. Новый чип использует техпроцесса 5 нм. Apple отмечает, что и новый 6-ядерный процессор, и 4-ядерный графический процессор являются самыми быстрыми из когда-либо существовавших, а производительность iPhone 12 Pro Max стала на 50% выше, чем у любого другого телефона.",
       "images": [
-        "https://www.myphone.kg/files/media/12/12103.jpg",
-        "https://www.myphone.kg/cache/files/12103.jpg_w130_h130_resize.jpg?t=1622460245",
-        "https://www.myphone.kg/cache/files/12103.jpg_w130_h130_resize.jpg?t=1622460245",
-        "https://www.myphone.kg/cache/files/12101.jpg_w130_h130_resize.jpg?t=1622460245"
+        "https://www.myphone.kg/files/media/10/10770.png",
+        "https://www.myphone.kg/files/media/10/10771.png",
+        "https://www.myphone.kg/files/media/10/10771.png"
       ]
     },
     {
       "id": 8,
-      "brand": 1,
-      "title": "Xiaomi Redmi Note 10S",
-      "memory": "32Gb",
-      "price": 13390,
-      "description": "Открывайте новые грани возможного с Redmi Note 10S. Камера с максимальным разрешением 64 Mп позволяет запечатлеть все в малейших деталях. Яркий AMOLED экран диагональю 6,43 дюйма обеспечивает больше пространства для ваших развлечений, а емкая батарея с поддержкой быстрой зарядки 33 Вт позаботится о том, чтобы энергии хватило для всего.",
+      "brand": 6,
+      "title": "JBL PartyBox 1000",
+      "memory": "",
+      "price": 79990,
+      "description": "JBL PartyBox 1000 — это мощная акустическая система с полноформатными динамичными световыми эффектами и легендарным качеством звука JBL. Просто подключи микрофон или гитару и выходи на сцену! Или включи плейлист по Bluetooth или с USB-накопителя. Светодиодные браслеты DJ и Party Band превращают вечеринку в настоящий концерт! Соедините две колонки PartyBox по беспроводной сети с помощью функции TWS или с помощью кабеля RCA-RCA. Да начнется вечеринка!",
       "images": [
-        "https://www.myphone.kg/files/media/11/11930.webp",
-        "https://www.myphone.kg/cache/files/11932.webp_w130_h130_resize.webp?t=1619457471",
-        "https://www.myphone.kg/cache/files/11932.webp_w130_h130_resize.webp?t=1619457471"
+        "https://www.myphone.kg/files/media/8/8877.jpg",
+        "https://www.myphone.kg/files/media/8/8880.jpg",
+        "https://www.myphone.kg/files/media/8/8878.jpg",
+        "https://www.myphone.kg/files/media/8/8878.jpg"
       ]
     }
   ]
