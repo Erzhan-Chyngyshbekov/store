@@ -11,7 +11,9 @@ import Slide from "@material-ui/core/Slide";
 import MenuBar from "../components/MenuBar/MenuBar";
 import SearchBar from "../components/SearchBar/SearchBar";
 import { makeStyles, useTheme } from "@material-ui/core";
-import { NavLink } from "react-router-dom";
+import { NavLink, useHistory } from "react-router-dom";
+import AddIcon from "@material-ui/icons/Add";
+import { Fab } from "@material-ui/core";
 
 const useStyles = makeStyles((theme) => ({
   content: {
@@ -50,6 +52,11 @@ const useStyles = makeStyles((theme) => ({
     marginTop: 90,
     padding: 10,
   },
+  addBtn: {
+    position: "fixed",
+    top: "50%",
+    right: 15,
+  },
 }));
 
 function HideOnScroll(props) {
@@ -78,6 +85,8 @@ HideOnScroll.propTypes = {
 export default function MainLayout(props) {
   const classes = useStyles();
 
+  const history = useHistory();
+
   return (
     <React.Fragment>
       <CssBaseline />
@@ -87,14 +96,29 @@ export default function MainLayout(props) {
             <MenuBar />
             <div className={classes.navContent}>
               <Typography className={classes.logo} variant="h6">
-                TechnoStore
+                <NavLink
+                  style={{ textDecoration: "none", color: "#fff" }}
+                  to="/"
+                >
+                  TechnoStore
+                </NavLink>
               </Typography>
               <SearchBar />
             </div>
           </Toolbar>
         </AppBar>
       </HideOnScroll>
-      <main className={classes.main}>{props.children}</main>
+      <main className={classes.main}>
+        {props.children}
+        <Fab
+          onClick={() => history.push("/products/create")}
+          className={classes.addBtn}
+          color="secondary"
+          aria-label="add"
+        >
+          <AddIcon />
+        </Fab>
+      </main>
     </React.Fragment>
   );
 }

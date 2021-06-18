@@ -1,0 +1,141 @@
+{
+  "brands": [
+    {
+      "id": 1,
+      "title": "Samsung",
+      "logo": "https://www.myphone.kg/files/media/9/9208.png"
+    },
+    {
+      "id": 2,
+      "title": "Apple",
+      "logo": "https://www.myphone.kg/files/media/9/9197.png"
+    },
+    {
+      "id": 3,
+      "title": "Xiaomi",
+      "logo": "https://www.myphone.kg/files/media/9/9200.png"
+    },
+    {
+      "id": 4,
+      "title": "Realme",
+      "logo": "https://www.myphone.kg/files/media/9/9555.png"
+    },
+    {
+      "id": 5,
+      "title": "INOI",
+      "logo": "https://www.myphone.kg/files/media/10/10180.png"
+    },
+    {
+      "id": 6,
+      "title": "JBL",
+      "logo": "https://www.myphone.kg/files/media/9/9198.png"
+    }
+  ],
+  "products": [
+    {
+      "id": 1,
+      "brand": 1,
+      "title": "Xiaomi Redmi Note 10S",
+      "memory": "6+128Gb",
+      "price": 21990,
+      "description": "Открывайте новые грани возможного с Redmi Note 10S. Камера с максимальным разрешением 64 Mп позволяет запечатлеть все в малейших деталях. Яркий AMOLED экран диагональю 6,43 дюйма обеспечивает больше пространства для ваших развлечений, а емкая батарея с поддержкой быстрой зарядки 33 Вт позаботится о том, чтобы энергии хватило для всего.",
+      "images": [
+        "https://www.myphone.kg/files/media/12/12210.jpg",
+        "https://www.myphone.kg/cache/files/12211.jpg_w130_h130_resize.jpg?t=1623660436",
+        "https://www.myphone.kg/cache/files/12212.png_w130_h130_resize.png?t=1623660436"
+      ]
+    },
+    {
+      "id": 2,
+      "brand": 1,
+      "title": "Xiaomi Redmi Note 10S",
+      "memory": "1288Gb",
+      "price": 21590,
+      "description": "Открывайте новые грани возможного с Redmi Note 10S. Камера с максимальным разрешением 64 Mп позволяет запечатлеть все в малейших деталях. Яркий AMOLED экран диагональю 6,43 дюйма обеспечивает больше пространства для ваших развлечений, а емкая батарея с поддержкой быстрой зарядки 33 Вт позаботится о том, чтобы энергии хватило для всего.",
+      "images": [
+        "https://www.myphone.kg/files/media/12/12112.webp"
+      ]
+    },
+    {
+      "id": 3,
+      "brand": 1,
+      "title": "Xiaomi Redmi Note 10S",
+      "memory": "32Gb",
+      "price": 13390,
+      "description": "Открывайте новые грани возможного с Redmi Note 10S. Камера с максимальным разрешением 64 Mп позволяет запечатлеть все в малейших деталях. Яркий AMOLED экран диагональю 6,43 дюйма обеспечивает больше пространства для ваших развлечений, а емкая батарея с поддержкой быстрой зарядки 33 Вт позаботится о том, чтобы энергии хватило для всего.",
+      "images": [
+        "https://www.myphone.kg/files/media/12/12103.jpg",
+        "https://www.myphone.kg/cache/files/12103.jpg_w130_h130_resize.jpg?t=1622460245",
+        "https://www.myphone.kg/cache/files/12103.jpg_w130_h130_resize.jpg?t=1622460245",
+        "https://www.myphone.kg/cache/files/12101.jpg_w130_h130_resize.jpg?t=1622460245"
+      ]
+    },
+    {
+      "id": 4,
+      "brand": 1,
+      "title": "Xiaomi Redmi Note 10S",
+      "memory": "32Gb",
+      "price": 13390,
+      "description": "Открывайте новые грани возможного с Redmi Note 10S. Камера с максимальным разрешением 64 Mп позволяет запечатлеть все в малейших деталях. Яркий AMOLED экран диагональю 6,43 дюйма обеспечивает больше пространства для ваших развлечений, а емкая батарея с поддержкой быстрой зарядки 33 Вт позаботится о том, чтобы энергии хватило для всего.",
+      "images": [
+        "https://www.myphone.kg/files/media/11/11930.webp",
+        "https://www.myphone.kg/cache/files/11932.webp_w130_h130_resize.webp?t=1619457471",
+        "https://www.myphone.kg/cache/files/11932.webp_w130_h130_resize.webp?t=1619457471"
+      ]
+    },
+    {
+      "id": 5,
+      "brand": 1,
+      "title": "Xiaomi Redmi Note 10S",
+      "memory": "6+128Gb",
+      "price": 21990,
+      "description": "Открывайте новые грани возможного с Redmi Note 10S. Камера с максимальным разрешением 64 Mп позволяет запечатлеть все в малейших деталях. Яркий AMOLED экран диагональю 6,43 дюйма обеспечивает больше пространства для ваших развлечений, а емкая батарея с поддержкой быстрой зарядки 33 Вт позаботится о том, чтобы энергии хватило для всего.",
+      "images": [
+        "https://www.myphone.kg/files/media/12/12210.jpg",
+        "https://www.myphone.kg/cache/files/12211.jpg_w130_h130_resize.jpg?t=1623660436",
+        "https://www.myphone.kg/cache/files/12212.png_w130_h130_resize.png?t=1623660436"
+      ]
+    },
+    {
+      "id": 6,
+      "brand": 1,
+      "title": "Xiaomi Redmi Note 10S",
+      "memory": "128Gb",
+      "price": 21590,
+      "description": "Открывайте новые грани возможного с Redmi Note 10S. Камера с максимальным разрешением 64 Mп позволяет запечатлеть все в малейших деталях. Яркий AMOLED экран диагональю 6,43 дюйма обеспечивает больше пространства для ваших развлечений, а емкая батарея с поддержкой быстрой зарядки 33 Вт позаботится о том, чтобы энергии хватило для всего.",
+      "images": [
+        "https://www.myphone.kg/files/media/12/12112.webp",
+        "https://www.myphone.kg/cache/files/12113.webp_w130_h130_resize.webp?t=1622460181",
+        "https://www.myphone.kg/cache/files/12114.webp_w130_h130_resize.webp?t=1622460181",
+        "https://www.myphone.kg/cache/files/12115.webp_w130_h130_resize.webp?t=1622460181"
+      ]
+    },
+    {
+      "id": 7,
+      "brand": 1,
+      "title": "Xiaomi Redmi Note 10S",
+      "memory": "32Gb",
+      "price": 13390,
+      "description": "Открывайте новые грани возможного с Redmi Note 10S. Камера с максимальным разрешением 64 Mп позволяет запечатлеть все в малейших деталях. Яркий AMOLED экран диагональю 6,43 дюйма обеспечивает больше пространства для ваших развлечений, а емкая батарея с поддержкой быстрой зарядки 33 Вт позаботится о том, чтобы энергии хватило для всего.",
+      "images": [
+        "https://www.myphone.kg/files/media/12/12103.jpg",
+        "https://www.myphone.kg/cache/files/12103.jpg_w130_h130_resize.jpg?t=1622460245",
+        "https://www.myphone.kg/cache/files/12103.jpg_w130_h130_resize.jpg?t=1622460245",
+        "https://www.myphone.kg/cache/files/12101.jpg_w130_h130_resize.jpg?t=1622460245"
+      ]
+    },
+    {
+      "id": 8,
+      "brand": 1,
+      "title": "Xiaomi Redmi Note 10S",
+      "memory": "32Gb",
+      "price": 13390,
+      "description": "Открывайте новые грани возможного с Redmi Note 10S. Камера с максимальным разрешением 64 Mп позволяет запечатлеть все в малейших деталях. Яркий AMOLED экран диагональю 6,43 дюйма обеспечивает больше пространства для ваших развлечений, а емкая батарея с поддержкой быстрой зарядки 33 Вт позаботится о том, чтобы энергии хватило для всего.",
+      "images": [
+        "https://www.myphone.kg/files/media/11/11930.webp",
+        "https://www.myphone.kg/cache/files/11932.webp_w130_h130_resize.webp?t=1619457471",
+        "https://www.myphone.kg/cache/files/11932.webp_w130_h130_resize.webp?t=1619457471"
+      ]
+    }
+  ]
+}

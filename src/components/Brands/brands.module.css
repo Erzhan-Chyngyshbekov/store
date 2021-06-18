@@ -1,0 +1,27 @@
+.container {
+  width: 80%;
+  margin: 0 auto 30px;
+  background-color: #fff;
+  display: flex;
+  flex-direction: row;
+}
+
+.container_item {
+  width: 100%;
+  height: auto;
+  border-right: #f0f0f0 1px solid;
+  padding: 20px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container_item img {
+  width: 90%;
+  height: auto;
+  transition: 0.2s ease-in-out;
+}
+
+.container_item img:hover {
+  transform: scale(1.1);
+}

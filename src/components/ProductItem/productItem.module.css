@@ -1,0 +1,12 @@
+.root {
+  width: 100%;
+  text-align: center;
+}
+.media {
+  height: 300;
+  background-size: contain;
+}
+
+.root:hover {
+  border: 1px red solid;
+}
