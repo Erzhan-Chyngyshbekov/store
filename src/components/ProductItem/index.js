@@ -7,13 +7,13 @@ import CardContent from "@material-ui/core/CardContent";
 import CardMedia from "@material-ui/core/CardMedia";
 import Button from "@material-ui/core/Button";
 import Typography from "@material-ui/core/Typography";
-import SaveAltIcon from "@material-ui/icons/SaveAlt";
-import FavoriteBorderIcon from "@material-ui/icons/FavoriteBorder";
-import FavoriteIcon from "@material-ui/icons/Favorite";
-import classes from "./productItem.module.css";
 import { useHistory } from "react-router";
 import Truncate from "react-truncate";
 import { storeContext } from "../../Contexts/StoreContext";
+import Checkbox from "@material-ui/core/Checkbox";
+import Favorite from "@material-ui/icons/Favorite";
+import FavoriteBorder from "@material-ui/icons/FavoriteBorder";
+import ShoppingBasketIcon from "@material-ui/icons/ShoppingBasket";
 
 const useStyles = makeStyles({
   root: {
@@ -62,21 +62,21 @@ export default function ProductItem({ data }) {
         </CardContent>
       </CardActionArea>
       <CardActions>
-        {/* {like ? (
-          <Button onclick={handleLikeChange} size="small" color="primary">
-            <FavoriteIcon style={{ color: "#e7315d" }} />
-          </Button>
-        ) : ( */}
-        <Button onclick={handleLikeChange} size="small" color="primary">
-          <FavoriteBorderIcon style={{ color: "#e7315d" }} />
-        </Button>
+        <Checkbox
+          onChange={handleLikeChange}
+          icon={<FavoriteBorder />}
+          checkedIcon={<Favorite />}
+          name="checkedH"
+          checked={like}
+          style={{ color: "#e7315d" }}
+        />
 
         <Button
           onClick={() => addProductToCart(data)}
           size="small"
           color="primary"
         >
-          <SaveAltIcon style={{ color: "#e7315d" }} />
+          <ShoppingBasketIcon style={{ color: "#e7315d" }} />
         </Button>
       </CardActions>
     </Card>

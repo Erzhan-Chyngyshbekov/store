@@ -4,9 +4,9 @@ import { storeContext } from "../../Contexts/StoreContext";
 import classes from "./brands.module.css";
 
 export default function Brands() {
-  const { brands, fetchBrands } = useContext(storeContext);
+  const { brand, fetchBrands } = useContext(storeContext);
 
-  console.log(brands);
+  console.log(brand);
 
   useEffect(() => {
     fetchBrands();
@@ -14,7 +14,7 @@ export default function Brands() {
 
   return (
     <div className={classes.container}>
-      {brands.map((brand) => (
+      {brand.map((brand) => (
         <div className={classes.container_item}>
           <Link to={`/brand/${brand.id}`}>
             <img src={brand.logo} alt={`${brand.title} logo`} />

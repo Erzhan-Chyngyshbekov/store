@@ -4,12 +4,9 @@ import { makeStyles } from "@material-ui/core/styles";
 import SwipeableDrawer from "@material-ui/core/SwipeableDrawer";
 import Button from "@material-ui/core/Button";
 import List from "@material-ui/core/List";
-import Divider from "@material-ui/core/Divider";
 import ListItem from "@material-ui/core/ListItem";
 import ListItemIcon from "@material-ui/core/ListItemIcon";
 import ListItemText from "@material-ui/core/ListItemText";
-import InboxIcon from "@material-ui/icons/MoveToInbox";
-import MailIcon from "@material-ui/icons/Mail";
 import IconButton from "@material-ui/core/IconButton";
 import MenuIcon from "@material-ui/icons/Menu";
 import { storeContext } from "../../Contexts/StoreContext";
@@ -25,6 +22,10 @@ const useStyles = makeStyles({
   brandLogo: {
     width: 120,
     objectFit: "contain",
+    transition: "0.2s ease-in-out",
+    "&:hover": {
+      transform: "scale(1.1)",
+    },
   },
 });
 
@@ -34,7 +35,7 @@ export default function MenuBar() {
     left: false,
   });
 
-  const { brands } = useContext(storeContext);
+  const { brand } = useContext(storeContext);
 
   const toggleDrawer = (anchor, open) => (event) => {
     if (
@@ -58,10 +59,13 @@ export default function MenuBar() {
       onKeyDown={toggleDrawer(anchor, false)}
     >
       <List>
-        {brands.map((brand) => (
+        {brand.map((brand) => (
           <Link to={`/brand/${brand.id}`}>
             <ListItem button key={brand.id}>
-              <ListItemText primary={brand.title} />
+              <ListItemText
+                primary={brand.title}
+                style={{ textDecoration: "none", color: "#000" }}
+              />
 
               <ListItemIcon>
                 <img

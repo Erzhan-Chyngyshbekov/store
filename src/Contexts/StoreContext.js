@@ -4,7 +4,7 @@ import { calcTotalPrice, calcSubPrice } from "../helpers/calcPrice";
 
 const INIT_STATE = {
   products: [],
-  brands: [],
+  brand: [],
   productDetail: null,
   brandDetail: null,
   total: 0,
@@ -39,7 +39,7 @@ const reducer = (state = INIT_STATE, action) => {
     case "SET_BRANDS":
       return {
         ...state,
-        brands: action.payload,
+        brand: action.payload,
       };
     case "CLEAR_PRODUCT":
       return {
@@ -126,12 +126,12 @@ export default function StoreContextProvider(props) {
   };
 
   const fetchBrands = async () => {
-    const response = await axios.get(`${URL}/brands`);
-    const brands = response.data;
+    const response = await axios.get(`${URL}/brand`);
+    const brand = response.data;
 
     dispatch({
       type: "SET_BRANDS",
-      payload: brands,
+      payload: brand,
     });
   };
 
@@ -157,7 +157,7 @@ export default function StoreContextProvider(props) {
   };
 
   const fetchBrandDetail = async (brandId) => {
-    const response = await axios.get(`${URL}/brands/${brandId}`);
+    const response = await axios.get(`${URL}/brand/${brandId}`);
     const brand = response.data;
 
     dispatch({
@@ -239,7 +239,7 @@ export default function StoreContextProvider(props) {
     <storeContext.Provider
       value={{
         products: state.products,
-        brands: state.brands,
+        brand: state.brand,
         productDetail: state.productDetail,
         total: state.total,
         brandDetail: state.brandDetail,

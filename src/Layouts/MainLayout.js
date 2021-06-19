@@ -41,8 +41,14 @@ const useStyles = makeStyles((theme) => ({
     justifyContent: "space-between",
   },
   logo: {
+    marginTop: 10,
     [theme.breakpoints.down("sm")]: {
       display: "none",
+    },
+    transition: "0.2s ease-in-out",
+    "&:hover": {
+      transform: "scale(1.1)",
+      color: "#9b2141",
     },
   },
   toolbar: {
@@ -58,6 +64,17 @@ const useStyles = makeStyles((theme) => ({
     position: "fixed",
     top: "50%",
     right: 15,
+  },
+  icon_button: {
+    transition: "0.2s ease-in-out",
+    "&:hover": {
+      transform: "scale(1.1)",
+    },
+  },
+  basket: {
+    [theme.breakpoints.down("xs")]: {
+      display: "none",
+    },
   },
 }));
 
@@ -97,11 +114,7 @@ export default function MainLayout(props) {
           <Toolbar className={classes.toolbar}>
             <MenuBar />
             <div className={classes.navContent}>
-              <Typography
-                style={{ marginTop: 10 }}
-                className={classes.logo}
-                variant="h5"
-              >
+              <Typography className={classes.logo} variant="h5">
                 <NavLink
                   style={{
                     textDecoration: "none",
@@ -116,9 +129,11 @@ export default function MainLayout(props) {
                 to="/cart"
                 style={{ textDecoration: "none", color: "white" }}
               >
-                <IconButton color="inherit">
+                <IconButton className={classes.icon_button} color="inherit">
                   <ShoppingCartIcon />
-                  корзина
+                  <Typography className={classes.basket} variant="h6">
+                    корзина
+                  </Typography>
                 </IconButton>
               </Link>
               <SearchBar />

@@ -50,6 +50,7 @@
     {
       "id": 2,
       "brand": 1,
+      "like": true,
       "title": "Samsung Galaxy A32",
       "memory": "128Gb",
       "price": 21590,
@@ -64,6 +65,7 @@
     {
       "id": 3,
       "brand": 1,
+      "like": true,
       "title": "Samsung M12 ",
       "memory": "32Gb",
       "price": 13390,
@@ -78,6 +80,7 @@
     {
       "id": 4,
       "brand": 3,
+      "like": false,
       "title": "Xiaomi Poco X3 Pro",
       "memory": "128Gb",
       "price": 24790,
@@ -92,6 +95,7 @@
     {
       "id": 5,
       "brand": 4,
+      "like": true,
       "title": "Realme X3",
       "memory": "6+128Gb",
       "price": 32990,
@@ -106,6 +110,7 @@
     {
       "id": 6,
       "brand": 5,
+      "like": false,
       "title": "Inoi 7i",
       "memory": "8Gb",
       "price": 5490,
@@ -119,6 +124,7 @@
     {
       "id": 7,
       "brand": 2,
+      "like": true,
       "title": "Apple IPhone 12 Pro Max",
       "memory": "512Gb",
       "price": 125900,
@@ -132,6 +138,7 @@
     {
       "id": 8,
       "brand": 6,
+      "like": false,
       "title": "JBL PartyBox 1000",
       "memory": "",
       "price": 79990,
