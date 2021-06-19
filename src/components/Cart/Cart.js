@@ -9,7 +9,6 @@ import TableRow from "@material-ui/core/TableRow";
 import Paper from "@material-ui/core/Paper";
 import { Typography } from "@material-ui/core";
 import { calcTotalPrice } from "../../helpers/calcPrice";
-import { Link } from "react-router-dom";
 import { storeContext } from "../../Contexts/StoreContext";
 import MainLayout from "../../Layouts/MainLayout";
 

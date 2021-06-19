@@ -50,7 +50,7 @@
     {
       "id": 2,
       "brand": 1,
-      "like": true,
+      "like": false,
       "title": "Samsung Galaxy A32",
       "memory": "128Gb",
       "price": 21590,

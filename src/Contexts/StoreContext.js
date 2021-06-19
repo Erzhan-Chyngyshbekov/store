@@ -166,6 +166,20 @@ export default function StoreContextProvider(props) {
     });
   };
 
+  const fetchSearchProducts = async (value) => {
+    const response = await axios.get(`${URL}/products/?q=${value}`);
+    const products = response.data;
+    const total = response.headers["x-total-count"];
+
+    dispatch({
+      type: "SET_PRODUCTS",
+      payload: {
+        data: products,
+        total,
+      },
+    });
+  };
+
   const getCart = () => {
     let cart = JSON.parse(localStorage.getItem("cart"));
     if (!cart) {
@@ -256,6 +270,7 @@ export default function StoreContextProvider(props) {
         addProductToCart,
         changeProductCount,
         changeLikeStatus,
+        fetchSearchProducts,
       }}
     >
       {props.children}
