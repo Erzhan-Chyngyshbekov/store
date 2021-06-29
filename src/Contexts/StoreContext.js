@@ -159,6 +159,7 @@ export default function StoreContextProvider(props) {
   const fetchBrandDetail = async (brandId) => {
     const response = await axios.get(`${URL}/brand/${brandId}`);
     const brand = response.data;
+    console.log(brand);
 
     dispatch({
       type: "SET_BRAND_DETAIL",
