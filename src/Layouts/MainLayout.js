@@ -142,7 +142,7 @@ export default function MainLayout(props) {
         </AppBar>
       </HideOnScroll>
       <main className={classes.main}>
-        {props.children}
+        <Container>{props.children}</Container>
         <Fab
           onClick={() => history.push("/products/create")}
           className={classes.addBtn}
